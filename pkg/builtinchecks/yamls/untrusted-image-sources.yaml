@@ -1,0 +1,10 @@
+name: "untrusted-image-sources"
+description: "Indicates when a deployment uses any un-trusted container image sources"
+remediation: >-
+  use container images from the allowed image registeries/sources
+scope:
+  objectKinds:
+    - DeploymentLike
+template: "untrusted-image-sources"
+params:
+  AllowedImageSources: ["quay.io", "registry.access.redhat.com"]
