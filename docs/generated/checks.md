@@ -498,6 +498,22 @@ KubeLinter includes the following built-in checks:
 {"lowerBoundMB":0,"requirementsType":"any","upperBoundMB":0}
 ```
 
+## untrusted-image-tags
+
+**Enabled by default**: Yes
+
+**Description**: Indicates when a deployment uses a un-trusted image tag
+
+**Remediation**: use any tag other than latest
+
+**Template**: [untrusted-image-tags](generated/templates.md#untrusted-image-tags)
+
+**Parameters**:
+
+```json
+{"NotAllowedTags":["latest"]}
+```
+
 ## writable-host-mount
 
 **Enabled by default**: No
