@@ -1,0 +1,10 @@
+name: "untrusted-image-tags"
+description: "Indicates when a deployment uses a un-trusted image tag"
+remediation: >-
+  use any tag other than latest
+scope:
+  objectKinds:
+    - DeploymentLike
+template: "untrusted-image-tags"
+params:
+  NotAllowedTags: ["latest"]
