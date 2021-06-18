@@ -29,5 +29,6 @@ var (
 		"unset-cpu-requirements",
 		"unset-memory-requirements",
 		"untrusted-image-tags",
+		"untrusted-image-sources",
 	)
 )

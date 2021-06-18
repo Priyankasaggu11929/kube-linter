@@ -1,0 +1,10 @@
+name: "untrusted-image-sources"
+description: "Indicates when a deployment uses a un-trusted image tag"
+remediation: >-
+  use any tag other than latest
+scope:
+  objectKinds:
+    - DeploymentLike
+template: "untrusted-image-sources"
+params:
+  NotAllowedImageSources: ["quay.io", "registry.access.redhat.com"]
