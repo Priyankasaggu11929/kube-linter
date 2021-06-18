@@ -498,6 +498,22 @@ KubeLinter includes the following built-in checks:
 {"lowerBoundMB":0,"requirementsType":"any","upperBoundMB":0}
 ```
 
+## untrusted-image-sources
+
+**Enabled by default**: Yes
+
+**Description**: Indicates when a deployment uses any un-trusted container image sources
+
+**Remediation**: use container images from the allowed image registeries/sources
+
+**Template**: [untrusted-image-sources](generated/templates.md#untrusted-image-sources)
+
+**Parameters**:
+
+```json
+{"AllowedImageSources":["quay.io","registry.access.redhat.com"]}
+```
+
 ## writable-host-mount
 
 **Enabled by default**: No

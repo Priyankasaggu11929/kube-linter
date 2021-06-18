@@ -613,6 +613,30 @@ KubeLinter supports the following templates:
 ]
 ```
 
+## Untrusted image sources
+
+**Key**: `untrusted-image-sources`
+
+**Description**: Flag applications running containers with untrusted container image source
+
+**Supported Objects**: DeploymentLike
+
+**Parameters**:
+
+```json
+[
+  {
+    "name": "allowedImageSources",
+    "type": "array",
+    "description": "List of allowed container image sources or image registeries",
+    "required": false,
+    "regexAllowed": true,
+    "negationAllowed": true,
+    "arrayElemType": "string"
+  }
+]
+```
+
 ## Verify container capabilities
 
 **Key**: `verify-container-capabilities`
