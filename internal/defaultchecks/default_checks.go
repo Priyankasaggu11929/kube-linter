@@ -28,5 +28,6 @@ var (
 		"unsafe-sysctls",
 		"unset-cpu-requirements",
 		"unset-memory-requirements",
+		"untrusted-image-tags",
 	)
 )

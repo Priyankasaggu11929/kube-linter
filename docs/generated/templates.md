@@ -613,6 +613,30 @@ KubeLinter supports the following templates:
 ]
 ```
 
+## Untrusted image tags
+
+**Key**: `untrusted-image-tags`
+
+**Description**: Flag applications running containers with untrusted image tags
+
+**Supported Objects**: DeploymentLike
+
+**Parameters**:
+
+```json
+[
+  {
+    "name": "notAllowedTags",
+    "type": "array",
+    "description": "List of the not-allowed container image tags",
+    "required": false,
+    "regexAllowed": true,
+    "negationAllowed": true,
+    "arrayElemType": "string"
+  }
+]
+```
+
 ## Verify container capabilities
 
 **Key**: `verify-container-capabilities`

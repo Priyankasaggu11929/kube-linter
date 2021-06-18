@@ -32,5 +32,6 @@ import (
 	_ "golang.stackrox.io/kube-linter/pkg/templates/servicetype"
 	_ "golang.stackrox.io/kube-linter/pkg/templates/sysctl"
 	_ "golang.stackrox.io/kube-linter/pkg/templates/unsafeprocmount"
+	_ "golang.stackrox.io/kube-linter/pkg/templates/untrustedimagetags"
 	_ "golang.stackrox.io/kube-linter/pkg/templates/writablehostmount"
 )
